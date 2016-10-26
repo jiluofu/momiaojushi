@@ -1,0 +1,64 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 15px;
+    font-family: "Microsoft YaHei";
+}
+
+form, p, ul, li, div, dl, dt, dd, input, a, span {
+    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    
+    border: 0;
+    vertical-align: text-bottom;
+    max-width: 450px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #077AC7;
+}
+
+a:visited {
+    color:#077AC7;
+}
+
+#container {
+
+    width: 500px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+p {
+
+    line-height: 40px;
+}
+
+p.img {
+
+    text-align: center;
+
+}
+
+#footer {
+
+    margin: 10px;
+    text-align: center;
+}
+
+#footer-desc {
+
+    font-size: 14px;
+}
+
