@@ -1,38 +1,43 @@
-**2016.10.24**
+**2016.11.04**
 
-![](http://upload-images.jianshu.io/upload_images/51001-aabe9abc420aa50e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+说起韩国料理，自然是烤肉，楼下正好有两家有名的韩国烤肉店，紧挨着开在一起。
 
-**拍摄时间：2013.11.10**
+印象里，当年第一次吃烤肉，就是父母带着来这里吃的。
 
-**拍摄地点：地坛**
+烤肉的香和蘸料的甜，给我留下了深刻的印象。
 
-这张照片是3年前在地坛拍的，11月初了，天气挺凉了。
+吃了多年后，选择变得简单了。
 
-那会儿周日一早去奶奶家，中午睡一大觉，下午16点多起床，去地坛玩儿。
+点好炭火后，要一盘羊肉，肉相对厚，不太肥，烤得时候也不容易碎。
+![](http://upload-images.jianshu.io/upload_images/51001-011765e45c07e889.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-虽然准备了手套，但是自己不会戴，我们帮忙也不喜欢。
+调味牛排，味道非常好，用剪子剪成小块，很快就熟。
+![](http://upload-images.jianshu.io/upload_images/51001-2617969d265834bb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-非要光着小手拿着个毽子，虽然不会踢，但一路上都不撒手。
+生菜卷肉，之前每次吃，母亲都要求我按照正宗的程序进行。那时很反感吃菜，只是一味地吃肉。
 
-外面穿了一件连体的厚绒衣，之前云龙夫妇来看喵时送的，冬天户外穿起来还挺合适。
+现在也开始吃菜了，因为肉吃多了也觉得腻。
+![](http://upload-images.jianshu.io/upload_images/51001-060c1a13a8faf324.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-那一年初冬，基本就是靠这件连体服挺过来的。
+肉滋滋地，油都烤走了，滴在下面的炭火上，引起阵阵的火苗。
+![](http://upload-images.jianshu.io/upload_images/51001-78471864164eb048.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-头上的小帽子是出生时，爷爷给的婴儿套装里的帽子，一直带到一岁多。
+喵妈和喵不太吃肉，不过店里还有丰富的小菜，甜甜的南瓜粥。
+![](http://upload-images.jianshu.io/upload_images/51001-217ac8feaff68e00.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-身后背的防走失的小狮子背包，用的次数很少。
+尤其是冰凉酸甜的冷面，喵吃起来也是非常欢喜。
+![](http://upload-images.jianshu.io/upload_images/51001-b657960485b83cf2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-喵还是比较谨慎小心的，很少远离大人乱跑。
+回想一下，当年三里屯路两边都是朝鲜字大招牌的冷面馆，第一次吃冷面时，高兴地差点把自己噎死。
 
-到了今天，喵已经可以自己一个人套上大连衣裙、戴上项链、手链、王冠，再套上手套。
+这顿的两份肉基本都是我吃的，着实撑着了，以后就只要一份调味牛排就够了。
 
-完整的艾莎套装，都能自己一个人穿利索了。
 
-又快要到了一年黄叶满地的时候了。
+
 
 ***
 
-***下期预告：讲卷子***
+***下期预告：周末活动***
 
 ***
 
