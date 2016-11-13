@@ -2,7 +2,7 @@
 
 周六晚上，舞蹈课老师在群里留了作业，让同学们在家练习《走步》、《扩指》和《弯腰转腰》，把视频发到群里。
 
-![](http://upload-images.jianshu.io/upload_images/51001-9808ce521b56f6ee.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://pic4.zhimg.com/v2-8f4aeb3987175f2358489a5160c6f485.jpg)
 
 喵在家，凭着记忆，马上练完了，老师看到视频之后也很快给了指导意见。
 
