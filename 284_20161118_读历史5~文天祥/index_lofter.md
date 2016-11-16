@@ -5,7 +5,7 @@
 >惶恐滩头说惶恐，零丁洋里叹零丁。
 >人生自古谁无死，留取丹心照汗青。
 
-![](http://imglf.nosdn.127.net/img/aEdtVktuUHZmNHFGOG5rbTYxSFUwNUduZkZyeFdHL0VTK2NtVXhTZlBkOD0.jpg)
+![](http://imglf2.nosdn.127.net/img/TVcyTVNjbUFNT1N2RHlFUmJUanVWaVJtOVZRcWIvN2xWbnAzeDkrU3cxOD0.jpg)
 
 最近偶然看了文天祥的介绍，自然要讲到人生自古谁无死。
 
@@ -38,7 +38,7 @@
 
 ***
 
-***下期预告：***
+***下期预告：周末活动***
 
 ***
 
