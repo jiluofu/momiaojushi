@@ -1,6 +1,6 @@
 **2016.11.21**
 
-![](https://pic4.zhimg.com/v2-95c68acc9dd9917d36af5bda164a56f5.jpg)
+![](http://imglf.nosdn.127.net/img/WlZXMks2TEF6ZXZQWE1QY0RDRlhUdnJGSlQvZEZFWTJaUk1RdnN5TTVmdz0.jpg)
 
 **拍摄时间：1990年后某个夏天**
 
