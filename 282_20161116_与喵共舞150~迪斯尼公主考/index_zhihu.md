@@ -10,7 +10,7 @@
 每个面孔都似曾相识，但除了白雪公主之外，却都叫不上名字。
 
 于是，开始百度一下每位公主。
-![](http://upload-images.jianshu.io/upload_images/51001-c018e9d23178ac90.jpeg)
+![](https://pic4.zhimg.com/v2-0f5be8a96901cda0127b2b41639d45f0.jpg)
 
 
 喵妈说：

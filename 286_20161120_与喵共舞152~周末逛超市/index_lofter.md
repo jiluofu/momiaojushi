@@ -12,37 +12,37 @@
 最后决定去家乐福开大车。
 
 一出门，毛毛雨似有似无地飘着，昨晚的雾霾彻底消失了，真是有点京城朝雨浥轻尘的意思。
-![](http://upload-images.jianshu.io/upload_images/51001-b5ed28c942b220b2.jpg)
+![](http://imglf.nosdn.127.net/img/N1lWWWFOdEQ5UEhDdlVYM3hVVVJUR2gyTjhucEVpUS81U2lhZEszK1JSND0.jpg)
 
 
 喵一路走着很开心，单帽挡着脑门，羽绒服的毛帽子保护耳朵。
-![](http://upload-images.jianshu.io/upload_images/51001-4daed191f2dcd047.jpg)
+![](http://imglf1.nosdn.127.net/img/UGFlY2tVQTl0NXUweTdNMFIvblhtQXlraWxDREZjRDB1K0hRd0UxanZKMD0.jpg)
 
 
 跟妈妈要拉着手走，脚上穿着婷婷姐姐送的运动鞋，也是皮面，正好防水。
-![](http://upload-images.jianshu.io/upload_images/51001-b88c08ca5b1add75.jpg)
+![](http://imglf0.nosdn.127.net/img/QkUyUDRRWmlDbDZNUDZPOFJHTkJpUG9jNWtDdVdrdkNJb0RnQzdQam4wVT0.jpg)
 
 
 到了家乐福，时间有点晚，没有找到开的车，心情有点低落。
-![](http://upload-images.jianshu.io/upload_images/51001-7ec31f9011202e78.jpg)
+![](http://imglf1.nosdn.127.net/img/OUZYWk1FTlRJcCt4aG5NdzQ5bFVROHhRWkRCT21IQk5ZWTVUZ0laellmND0.jpg)
 
 
 终于在入口处找到最后一辆，开心起来了。
-![](http://upload-images.jianshu.io/upload_images/51001-6c58012c620b7498.jpg)
+![](http://imglf.nosdn.127.net/img/TjhJR1U5MVRTbldhejNYS2QzL1VERWFwNEhQYWh2b3RQUXhXZitMS1FpQT0.jpg)
 
 
 超市里买了好多东西，结完帐正好去吃午饭。
-![](http://upload-images.jianshu.io/upload_images/51001-2daf87fceed15034.jpg)
+![](http://imglf2.nosdn.127.net/img/WUZuTFlZbDJzVllmcW1lcVBUL2lib1dCSmVwV0prY09idUtiaURrdXdFcz0.jpg)
 
 
 粉丝洋白菜，还有送的粥。
-![](http://upload-images.jianshu.io/upload_images/51001-77c45f4a7df9261a.jpg)
+![](http://imglf.nosdn.127.net/img/Nk9VbHJYODd4RkxKNmZiV24rVm9qekc2K1BzNEtxclpEQ2VCTDdRZC9hMD0.jpg)
 
 
 再加上羊肉串，肉蛋菜饭加水果，都很全面了。
 
 最后自己抱着小碗儿，把粥喝得干干净净。
-![](http://upload-images.jianshu.io/upload_images/51001-ba15ef9bdce7607d.jpg)
+![](http://imglf0.nosdn.127.net/img/TVcyTVNjbUFNT1FYUklFcEM1YTlKZXFYQkJrczBrUVVOR0x1S2hBS2pPOD0.jpg)
 
 
 回到家，时间还早，讲了2本英文书的故事，还有小熊维尼。
