@@ -27,7 +27,7 @@
 
 后来奶奶又找出来之前婷婷姐姐送到运动小皮鞋，穿起来既舒服，又漂亮。
 
-![](https://mmbiz.qlogo.cn/mmbiz_jpg/uDI3FLln00ZaJAO05dJ82YNCsptBdOcoEQGl7Wf3TIb9dibR6DLRIuXRSKKaRmfCqtXWpyibzCrfnbJhoNOgpX1A/0?wx_fmt=jpeg)
+![](https://mmbiz.qlogo.cn/mmbiz_jpg/uDI3FLln00bpYdp6ichpbE4hibicIqDHlzQ1JMC7cqjdnoprbiah5cqdv1AOvy1gTxdHyWshgicE0ickZmrRbudWPibjQ/0?wx_fmt=jpeg)
 
 
 有时候仔细看看这双皮鞋，确实挺漂亮，看着她穿起来的样子，真是很神气。
