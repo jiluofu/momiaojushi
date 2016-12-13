@@ -14,7 +14,7 @@
 小时候，家附近有一个历史悠久的三老俏，边上就是条斜街，通向百灵收音机厂。
 
 那条斜街在80年代末90年代初一直很热闹，和父母路过时，有一家买磁带的小店，会一直放着《一无所有》，我当时很好奇，为什么这首相声里的歌，在街边一直播放。
-![](https://mmbiz.qlogo.cn/mmbiz_jpg/uDI3FLln00Y6ibCm8sa28sVcbqjVxWpTvicLCxpfG1KyQTWt9Z2o6EicKN5STYThmccXkmcEibI4kA6r2rC2Eyf7Rg/0?wx_fmt=jpeg)
+![](https://mmbiz.qlogo.cn/mmbiz_jpg/uDI3FLln00YRVOIVFpF0nX8eq94mTEsSRXiauOe5GTIz5V6ugLCc9kl1JnqLohIUKm9oB4hFpCOuXZWWCiabPrEw/0?wx_fmt=jpeg)
 
 
 直到上了研究生，再重听这些歌时，才发现。
