@@ -13,7 +13,7 @@
 
 哈利波特37岁了，和妻子金妮一起送二儿子阿不思.西弗勒斯.波特去国王十字车站，准备霍格沃兹入学。
 
-![](https://pic3.zhimg.com/v2-d7af92cfee64ca69ee40b8ffb690fe2f.jpg)
+![](https://pic1.zhimg.com/v2-d7af92cfee64ca69ee40b8ffb690fe2f.jpg)
 
 
 阿不思的哥哥是詹姆，妹妹是莉莉。
