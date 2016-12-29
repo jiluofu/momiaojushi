@@ -32,7 +32,7 @@ from syncart import init
 import configparser
 
 cf = configparser.RawConfigParser()
-cf.read('sync.conf')
+cf.read(os.path.dirname(__file__) + os.path.sep + 'sync.conf')
 username = cf.get('mpwx', 'username')
 password = cf.get('mpwx', 'password')
 

@@ -13,3 +13,4 @@ sync.conf
 captcha.jpg
 qrcode.jpg
 cookies*
+__pycache__

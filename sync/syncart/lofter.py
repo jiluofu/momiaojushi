@@ -21,8 +21,9 @@ import os.path
 from syncart import init
 import configparser
 
+
 cf = configparser.RawConfigParser()
-cf.read('sync.conf')
+cf.read(os.path.dirname(__file__) + os.path.sep + 'sync.conf')
 cookie = cf.get('lofter', 'cookie')
 
 session = requests.session()

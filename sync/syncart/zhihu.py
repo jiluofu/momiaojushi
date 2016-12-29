@@ -30,7 +30,7 @@ import string
 import configparser
 
 cf = configparser.RawConfigParser()
-cf.read('sync.conf')
+cf.read(os.path.dirname(__file__) + os.path.sep + 'sync.conf')
 username = cf.get('zhihu', 'username')
 password = cf.get('zhihu', 'password')
 cookie = cf.get('zhihu', 'cookie')
