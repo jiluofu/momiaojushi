@@ -10,3 +10,6 @@ Thumbs.db
 .Trashes
 projectinit*.sh
 sync.conf
+captcha.jpg
+qrcode.jpg
+cookies*
