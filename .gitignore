@@ -1,0 +1,12 @@
+.idea
+.svn
+CVS
+issue.info
+.DS_Store
+Desktop.ini
+._*
+Thumbs.db
+.Spotlight-V100
+.Trashes
+projectinit*.sh
+sync.conf
