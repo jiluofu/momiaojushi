@@ -256,6 +256,8 @@ def pub(file_parent_path, folder):
     login_page = session.post(post_url, data=data, headers=headers_art)
 
     print(login_page.text)
+    res = eval(login_page.text)
+    print(res['msg'])
 
 
 
