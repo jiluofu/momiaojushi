@@ -278,7 +278,7 @@ def upload_img(img_file_path):
     print(login_page.text)
     res = eval(login_page.text)
     url = res['url'].replace('\\', '')
-
+    time.sleep(0.1)
 
 
     return url
@@ -328,6 +328,7 @@ def pub(file_parent_path, folder, qsj_folder_arr, url):
     init.get_folder_imgs(file_parent_path, folder, img_file_new_url, 'mpwx')
 
     qsj_cover_arr = []
+    print(qsj_folder_arr)
 
     for i in range(0, len(qsj_folder_arr)):
         img_file_new_url = get_img_file_new_url(file_parent_path + os.path.sep + 'tmp', qsj_folder_arr[i]['folder'])
@@ -354,7 +355,7 @@ def pub(file_parent_path, folder, qsj_folder_arr, url):
     post_url = 'https://mp.weixin.qq.com/cgi-bin/operate_appmsg?t=ajax-response&sub=create&type=10&token=' + token + '&lang=zh_CN'
 
     mpwx_cover_url = upload_img(init.cover['origin_file_path'])
-    print(4444)
+    
     print(init.cover['origin_file_path'])
     file_html_content = file_html_content + add_qr_html()
     file_html_content = re.sub(r'[\n]', '', file_html_content)
