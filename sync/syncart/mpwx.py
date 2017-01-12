@@ -277,8 +277,11 @@ def upload_img(img_file_path):
     login_page = session.post(post_url, data=data, headers=headers)
     print(login_page.text)
     res = eval(login_page.text)
+    if res['errcode'] != 0:
+        return ''
+
     url = res['url'].replace('\\', '')
-    time.sleep(0.1)
+
 
 
     return url
@@ -292,6 +295,24 @@ def get_img_file_new_url(file_parent_path, folder):
     for i in range(0, len(img_files)):
         img_file_path = file_pre + 'img' + os.path.sep + img_files[i]
         img_file_new_url[img_files[i]] = upload_img(img_file_path)
+        if img_file_new_url[img_files[i]] == '':
+            print('mpwx传图失败第1次，1秒后重试')
+            time.sleep(1)
+            img_file_new_url[img_files[i]] = upload_img(img_file_path)
+        if img_file_new_url[img_files[i]] == '':
+            print('mpwx传图失败第2次，1秒后重试')
+            time.sleep(1)
+            img_file_new_url[img_files[i]] = upload_img(img_file_path)
+        if img_file_new_url[img_files[i]] == '':
+            print('mpwx传图失败第3次，1秒后重试')
+            time.sleep(1)
+            img_file_new_url[img_files[i]] = upload_img(img_file_path)
+
+
+        if img_file_new_url[img_files[i]] == '':
+            print('mpwx传图最终失败')
+            sys.exit()
+
         print(img_file_new_url[img_files[i]])
 
     # print(img_file_new_url)

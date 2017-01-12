@@ -17,7 +17,7 @@
 罗丝的扫把第一个飞起来，而阿不思却是最后一面，完全不像当年他父亲那样。
 
 转眼间，一年过去，又到了哈利波特送阿不思来火车站了。
-![](https://mmbiz.qlogo.cn/mmbiz_jpg/uDI3FLln00a5icJf1ecSwcZrbl6quXCBF5OWmIkPfC2TByDpyxLU5byn1FPMoaw8ibzuqrIMxBosdjysXx5VBqSg/0?wx_fmt=jpeg)
+![](http://wx3.sinaimg.cn/large/627d9660ly1fbolr19u6wj20yg0jedgy.jpg)
 
 
 阿不思不希望附近站得离自己太近，周围都是哈利波特的崇拜者。

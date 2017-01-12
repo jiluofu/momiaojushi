@@ -9,7 +9,7 @@
 喵也没有去幼儿园，在奶奶家憋了一周。
 
 这时不禁想起，以前上学时，冬季的长跑，现在恐怕是无法开展了。
-![](https://mmbiz.qlogo.cn/mmbiz_jpg/uDI3FLln00au4BAicJw9HxIYYnC3DUZoYtzTu2Hv9lOHzrwkpH7PlsYicZOrVzCXOMSjZ65IyNhqaHKNmeviaSuoA/0?wx_fmt=jpeg)
+![](http://wx3.sinaimg.cn/large/627d9660ly1fbolpdc8i6j20rs0ku413.jpg)
 
 
 印象中，刚上小学时，就开始有冬季长跑了。
@@ -23,11 +23,11 @@
 到了五六年级，和一小组织冬季长跑就困难多了。
 
 学校操场实在太小，平时上操，高年级同学都要在教学楼楼顶做操。
-![](https://mmbiz.qlogo.cn/mmbiz_jpg/uDI3FLln00au4BAicJw9HxIYYnC3DUZoYId8hLicPDcS51ycuZibeFdch0JazLLKCaSx7wDSfwOORX1iaGvv4Hb9JA/0?wx_fmt=jpeg)
+![](http://wx3.sinaimg.cn/large/627d9660ly1fbolpd76phj20yg0pugqv.jpg)
 
 
 所以冬季长跑就改在校园外楼区里进行了。
-![](https://mmbiz.qlogo.cn/mmbiz_jpg/uDI3FLln00au4BAicJw9HxIYYnC3DUZoYzv9cXndpeY6Jp8P2WW8DoiczwSMvcj48sibSBibTOa9FibwNHia7NxIfjMw/0?wx_fmt=jpeg)封面
+![](http://wx3.sinaimg.cn/large/627d9660ly1fbolpdfry5j20yg0pu7b0.jpg)封面
 
 
 有时候是体育课上跑，跑一会儿，大家就全不见了。
