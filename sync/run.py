@@ -8,6 +8,12 @@ from syncart import mpwx
 from syncart import weibo
 import os.path
 import sys
+import configparser
+
+cf = configparser.RawConfigParser()
+sync_conf_path = os.path.dirname(__file__) + os.path.sep + 'syncart' + os.path.sep + 'sync.conf'
+cf.read(sync_conf_path)
+
 
 try:
     input = raw_input
@@ -19,26 +25,42 @@ if len(sys.argv) > 1:
 else:
     url = input('请输入要处理的url\n>  ')
 
-# url = 'http://www.jianshu.com/p/86a670b9b1e1'
 
 if (url.strip() == ''):
     print('要处理的文章url为空')
-    sys.exit()
+    print('上次填写的url是:' + cf.get('target', 'url'))
+    
+    ok = input('是否使用上次的文章url？y/n\n')
+    if (ok == 'y'):
+        url = cf.get('target', 'url')
+    else:
+        sys.exit()
 
-print(url)
+cf.set('target', 'url', url)
+cf.write(open(sync_conf_path, 'w'))
 
-qsj = input('请输入要处理的额外链接空格分隔\n>  ')
+
+qsj = input('请输入要处理的qsj链接，空格分隔\n>  ')
 # qsj = 'http://www.jianshu.com/p/c0159a3e2f73 http://www.jianshu.com/p/0f39cf1bd4b2'
 
 
 if qsj.strip() != '':
-
-    qsj = qsj.strip().split(' ')
+    qsjurl = qsj.strip()
+    qsj = qsjurl.split(' ')
+    cf.set('target', 'qsjurl', qsjurl)
+    cf.write(open(sync_conf_path, 'w'))
 else:
-    qsj = []
-    
-print(qsj)
 
+    print('上次填写的qsj_url是:' + cf.get('target', 'qsjurl'))
+
+    ok = input('是否使用上次qsj_url？y/n\n')
+    if (ok == 'y'):
+        qsjurl = cf.get('target', 'qsjurl')
+        qsj = qsjurl.split(' ')
+    else:
+        qsjurl = ''
+        qsj = []
+    
 
 
 
