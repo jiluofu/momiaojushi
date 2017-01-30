@@ -144,7 +144,7 @@ def login(username, password):
 
 
     print('waiting for qrcode')
-    time.sleep(10)
+    time.sleep(20)
     print('going on')
 
 
