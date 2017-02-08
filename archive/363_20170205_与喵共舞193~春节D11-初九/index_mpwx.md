@@ -25,7 +25,7 @@
 很快就在这里交到了好朋友，就这样，好朋友们一起玩儿了2个小时。
 
 听着她们的对话非常有意思，互相比着不怕做噩梦，不怕坏人。
-![](https://mmbiz.qlogo.cn/mmbiz_jpg/uDI3FLln00bPzjqahziaTuhkvP2Kc5gCjSys1SRuxqLomYqk9Qg7ZfCBcJEU4cCW98yjKd9HagyYwCLlXbFRgLA/0?wx_fmt=jpeg)
+![](https://mmbiz.qlogo.cn/mmbiz_jpg/uDI3FLln00bPzjqahziaTuhkvP2Kc5gCjSys1SRuxqLomYqk9Qg7ZfCBcJEU4cCW98yjKd9HagyYwCLlXbFRgLA/0?wx_fmt=jpeg)封面
 
 
 玩儿完乐园，去看娃娃，提前告诉我们，只看不买。
