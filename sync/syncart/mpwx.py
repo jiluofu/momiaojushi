@@ -24,7 +24,7 @@ try:
 except:
     pass
 # import pytesseract
-import hashlib   
+import hashlib
 import json
 import sys
 
@@ -60,77 +60,27 @@ def login(username, password):
     m.update(password.encode('utf-8'))
     password = m.hexdigest()
 
-    # 提交登录用户名的url
-    post_url = 'https://mp.weixin.qq.com/cgi-bin/login?lang=zh_CN'
-    postdata = {
-    
-        'pwd': password,
+    post_url = 'https://mp.weixin.qq.com/cgi-bin/bizlogin?action=startlogin'
+
+
+    data = {
+
         'username': username,
         'f': 'json',
+        'pwd': password,
         'imgcode': ''
     }
 
-    headers['Content-Type'] = 'application/x-www-form-urlencoded'
-
-
-
-    login_page = session.post(post_url, data=postdata, headers=headers)
-    session.cookies.save()
-    print(login_page.text)
-    res = eval(login_page.text)
-    # 登录提交后得到跳转的url
-    url = 'https://mp.weixin.qq.com' + res['redirect_url']
-    print(url)   
-
-    # 获取ticket的post请求
-    post_url = 'https://mp.weixin.qq.com/misc/safeassistant?1=1&token=&lang=zh_CN'
-    
-
-    data = {
-
-        'lang': 'zh_CN',
-        'f': 'json',
-        'action': 'get_ticket',
-        'auth': 'ticket'
-    }
-   
     login_page = session.post(post_url, data=data, headers=headers)
     session.cookies.save()
-    print(login_page.text)
-    res = eval(login_page.text)
-    ticket = res['ticket']
 
-    # 获取uuid的接口，需要提交appid和上面的ticket
-    post_url = 'https://mp.weixin.qq.com/safe/safeqrconnect?1=1&token=&lang=zh_CN'
-    
-    # appid是一个写死的值
-    appid = 'wx3a432d2dbe2442ce'
-    data = {
+    url = 'https://mp.weixin.qq.com/cgi-bin/loginqrcode?action=ask&token=&lang=zh_CN&token=&lang=zh_CN&f=json&ajax=1&random=0.202972810079751'
+    login_page = session.get(url, headers=headers)
+    print("ask0:" + login_page.text)
 
-        'lang': 'zh_CN',
-        'f': 'json',
-        'ajax': '1',
-        'random': t,
-        'appid': appid,
-        'scope': 'snsapi_contact',
-        'state': '0',
-        'redirect_uri': 'https://mp.weixin.qq.com',
-        'login_type': 'safe_center',
-        'type': 'json',
-        'ticket': ticket
-    }
-
-    # print(data)
-   
-    login_page = session.post(post_url, data=data, headers=headers)
-    session.cookies.save()
-    # print(login_page.text)
-    res = eval(login_page.text)
-    uuid = res['uuid']
-    # print(uuid)
 
     # 二维码的图片url，需要上面的ticket和uuid
-    img_url = 'https://mp.weixin.qq.com/safe/safeqrcode?ticket=' + ticket + '&uuid=' + uuid + '&action=check&type=login&auth=ticket&msgid=427152200'
+    img_url = 'https://mp.weixin.qq.com/cgi-bin/loginqrcode?action=getqrcode&param=4300&rd=' + t
     print(img_url)
 
     r = session.get(img_url, headers=headers)
@@ -147,88 +97,41 @@ def login(username, password):
     time.sleep(20)
     print('going on')
 
+    url = 'https://mp.weixin.qq.com/cgi-bin/loginqrcode?action=ask&token=&lang=zh_CN&token=&lang=zh_CN&f=json&ajax=1&random=0.202972810079751'
+    login_page = session.get(url, headers=headers)
+    print("ask1:" + login_page.text)
 
-    post_url = 'https://mp.weixin.qq.com/safe/safeuuid?timespam=' + t + '&token=&lang=zh_CN'
-    data = {
+    time.sleep(1)
 
-        'lang': 'zh_CN',
-        'f': 'json',
-        'ajax': '1',
-        'random': t,
-        'uuid': uuid,
-        'action': 'json',
-        'type': 'json',
-        'token': ''
-    }
+    url = 'https://mp.weixin.qq.com/cgi-bin/loginqrcode?action=ask&token=&lang=zh_CN&token=&lang=zh_CN&f=json&ajax=1&random=0.202972810079751'
+    login_page = session.get(url, headers=headers)
+    print("ask2:" + login_page.text)
 
-    
-    login_page = session.post(post_url, data=data, headers=headers)
-    session.cookies.save()
-    print(login_page.text)
-
-    post_url = 'https://mp.weixin.qq.com/misc/safeassistant?1=1&token=&lang=zh_CN'
+    post_url = 'https://mp.weixin.qq.com/cgi-bin/bizlogin?action=login'
     data = {
 
         'token': '',
-        'lang': 'zh_CN',
         'f': 'json',
         'ajax': '1',
-        'random': t,
-        'uuid': uuid,
-        'action': 'get_uuid',
-        'uuid': uuid,
-        'auth': 'ticket'
+        'lang': ''
     }
 
     login_page = session.post(post_url, data=data, headers=headers)
-    session.cookies.save()
-    print(login_page.text)
-
-
-    post_url = 'https://mp.weixin.qq.com/cgi-bin/securewxverify'
-    data = {
-
-        'token': '',
-        'lang': 'zh_CN',
-        'f': 'json',
-        'ajax': '1',
-        'random': t,
-        'code': uuid,
-        'account': username,
-        'auth': 'ticket',
-        'operation_seq': '427154860'
-    }
-
-    login_page = session.post(post_url, data=data, headers=headers)
-    print(login_page.text)
-    session.cookies.save()
+    print("bizlogin?action=login:" + login_page.text)
     res = eval(login_page.text)
+
 
     if 'redirect_url' not in res:
         print('请刷二维码')
         sys.exit()
 
-    url = 'https://mp.weixin.qq.com' + res['redirect_url'].replace('\\', '')
-    print(url)
-    login_page = session.get(url, headers=headers)
-    # print(login_page.text)
-
     global token
     pattern = r'token=([^&=]*)'
-    token = re.findall(pattern, url)
+    token = re.findall(pattern, res['redirect_url'])
     token = token[0]
     print(token)
 
-    # post_url = 'https://mp.weixin.qq.com/cgi-bin/uploadimg2cdn?lang=zh_CN&token=' + token
-    # print(post_url)
-    # data = {
 
-    #     'imgurl': img_url,
-    #     't': 'jax-editor-upload-img'
-    # }
-
-    # login_page = session.post(post_url, data=data, headers=headers)
-    # print(login_page.text)
 
 try:
     input = raw_input
@@ -236,11 +139,6 @@ except:
     pass
 
 def inital():
-
-    # if mpwx_token != '':
-    #     token = mpwx_token
-    #     mpwx_session = mpwx_session
-    #     return False
 
     print('init mpwx')
     # return False
@@ -265,7 +163,7 @@ def upload_img(img_file_path):
     img_url = 'http://upload-images.jianshu.io/upload_images/' + img_file_name + '?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240'
     print(img_url)
 
-    # print(token)    
+    # print(token)
     post_url = 'https://mp.weixin.qq.com/cgi-bin/uploadimg2cdn?lang=zh_CN&token=' + token
     # print(post_url)
     data = {
@@ -292,21 +190,19 @@ def get_img_file_new_url(file_parent_path, folder):
 
     img_file_new_url = {}
     img_files = init.listdir(file_pre + 'img')
+    retry = 10
     for i in range(0, len(img_files)):
         img_file_path = file_pre + 'img' + os.path.sep + img_files[i]
         img_file_new_url[img_files[i]] = upload_img(img_file_path)
-        if img_file_new_url[img_files[i]] == '':
-            print('mpwx传图失败第1次，1秒后重试')
-            time.sleep(1)
-            img_file_new_url[img_files[i]] = upload_img(img_file_path)
-        if img_file_new_url[img_files[i]] == '':
-            print('mpwx传图失败第2次，1秒后重试')
-            time.sleep(1)
-            img_file_new_url[img_files[i]] = upload_img(img_file_path)
-        if img_file_new_url[img_files[i]] == '':
-            print('mpwx传图失败第3次，1秒后重试')
-            time.sleep(1)
-            img_file_new_url[img_files[i]] = upload_img(img_file_path)
+
+        for j in range(0, retry):
+
+            if img_file_new_url[img_files[i]] == '':
+                print('mpwx传图失败' + str(j + 1) + '/' + str(retry) + '，1秒后重试')
+                time.sleep(1)
+                img_file_new_url[img_files[i]] = upload_img(img_file_path)
+            else:
+                break;
 
 
         if img_file_new_url[img_files[i]] == '':
@@ -319,7 +215,7 @@ def get_img_file_new_url(file_parent_path, folder):
     return img_file_new_url
 
 def get_qsj_cover(file_parent_path, qsj_folder):
-    
+
     qsj_cover = {}
     qsj_cover['folder'] = qsj_folder
 
@@ -376,12 +272,12 @@ def pub(file_parent_path, folder, qsj_folder_arr, url):
     post_url = 'https://mp.weixin.qq.com/cgi-bin/operate_appmsg?t=ajax-response&sub=create&type=10&token=' + token + '&lang=zh_CN'
 
     mpwx_cover_url = upload_img(init.cover['origin_file_path'])
-    
+
     print(init.cover['origin_file_path'])
     file_html_content = file_html_content + add_qr_html()
     file_html_content = re.sub(r'[\n]', '', file_html_content)
     file_html_content = re.sub(r'<p>', '<p style="margin-top: 20px; margin-bottom: 20px;">', file_html_content)
-    
+
     print(file_html_content)
     data = {
 
