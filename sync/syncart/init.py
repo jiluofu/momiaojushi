@@ -83,11 +83,13 @@ def fetch_url(root_path, url, no_cover = False):
     imgs = get_imgs(content.html())
     for i in range(0, len(imgs)):
         pattern = r'/([^\?\/]*)\?[^\?\/]*/'
+
         img_file_name = re.findall(pattern, imgs[i])[0]
+
         print(imgs[i])
         print(img_file_name)
         # img_file_name = re.sub(r'http://(.*?)/([^/]+$)', '\\2', imgs[i])
-        r = session.get(imgs[i], headers=headers_img)
+        r = session.get('http:' + imgs[i], headers=headers_img)
         with open(img_dir_path + os.sep + img_file_name, 'wb') as f:
             f.write(r.content)
             f.close()
@@ -101,6 +103,7 @@ def fetch_url(root_path, url, no_cover = False):
 
     index_md_path = dir_path + os.sep + 'index.md'
     file_content = html_to_mk(content.html())
+
 
     # 查找封面图
     if no_cover == False:
@@ -131,7 +134,7 @@ def get_cover(index_md_content, img_dir_path):
         cover['origin_file_path'] = img_dir_path + os.sep + 'img' + os.sep + origin_file_name
         cover['file_path'] = img_dir_path + os.sep + cover['file_name']
 
-        r = session.get(img, headers=headers_img)
+        r = session.get('http:' + img, headers=headers_img)
         with open(cover['file_path'], 'wb') as f:
             f.write(r.content)
             f.close()
@@ -147,6 +150,8 @@ def get_cover(index_md_content, img_dir_path):
 def get_qsj_folder(file_parent_path, qsj_url):
     
     qsj_folder = {}
+    print(111)
+    print(qsj_url)
     qsj_folder['folder'] = fetch_url(file_parent_path + os.path.sep + 'tmp', qsj_url, True)
 
     return qsj_folder
