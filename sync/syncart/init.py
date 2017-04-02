@@ -89,7 +89,11 @@ def fetch_url(root_path, url, no_cover = False):
         print(imgs[i])
         print(img_file_name)
         # img_file_name = re.sub(r'http://(.*?)/([^/]+$)', '\\2', imgs[i])
-        r = session.get('http:' + imgs[i], headers=headers_img)
+        img_src_tmp = imgs[i];
+        if img_src_tmp.find('http:') < 0:
+            img_src_tmp = 'http:' + img_src_tmp;
+
+        r = session.get(img_src_tmp, headers=headers_img)
         with open(img_dir_path + os.sep + img_file_name, 'wb') as f:
             f.write(r.content)
             f.close()
@@ -134,7 +138,11 @@ def get_cover(index_md_content, img_dir_path):
         cover['origin_file_path'] = img_dir_path + os.sep + 'img' + os.sep + origin_file_name
         cover['file_path'] = img_dir_path + os.sep + cover['file_name']
 
-        r = session.get('http:' + img, headers=headers_img)
+        img_src_tmp = img;
+        if img_src_tmp.find('http:') < 0:
+            img_src_tmp = 'http:' + img_src_tmp;
+
+        r = session.get(img_src_tmp, headers=headers_img)
         with open(cover['file_path'], 'wb') as f:
             f.write(r.content)
             f.close()

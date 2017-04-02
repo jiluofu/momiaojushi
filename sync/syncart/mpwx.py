@@ -35,6 +35,7 @@ cf = configparser.RawConfigParser()
 cf.read(os.path.dirname(__file__) + os.path.sep + 'sync.conf')
 username = cf.get('mpwx', 'username')
 password = cf.get('mpwx', 'password')
+tag = cf.get('mpwx', 'tag')
 
 agent = 'Mozilla/5.0 (Windows NT 5.1; rv:33.0) Gecko/20100101 Firefox/33.0'
 headers = {
@@ -299,11 +300,13 @@ def pub(file_parent_path, folder, qsj_folder_arr, url):
         'show_cover_pic0': '0',
         'shortvideofileid0': '',
         'vid_type0': '',
-        'copyright_type0': '0',
         'need_open_comment0': '1',
         'only_fans_can_comment0': '0',
         'sourceurl0': url,
-        'fee0': '0'
+        'fee0': '0',
+        'reprint_permit_type0': '1',
+        'copyright_type0': '1',
+        'original_article_type0': tag
 
     }
 
@@ -322,6 +325,13 @@ def pub(file_parent_path, folder, qsj_folder_arr, url):
         data['content' + num] = qsj_file_html_content
         data['author' + num] = '喵妈'
         data['cdn_url' + num] = qsj_cover_arr[i]['cover_url']
+
+        # data['fee' + num] = 1
+        # data['need_open_comment' + num] = 1
+        # data['only_fans_can_comment' + num] = 0
+        # data['reprint_permit_type' + num] = 1
+        # data['copyright_type' + num] = 1
+        # data['original_article_type' + num] = '餐饮美食'
 
 
     # print(data)
