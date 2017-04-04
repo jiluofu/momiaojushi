@@ -275,7 +275,7 @@ def pub(file_parent_path, folder, qsj_folder_arr, url):
     mpwx_cover_url = upload_img(init.cover['origin_file_path'])
 
     print(init.cover['origin_file_path'])
-    file_html_content = file_html_content + add_qr_html()
+    # file_html_content = file_html_content + add_qr_html()
     file_html_content = re.sub(r'[\n]', '', file_html_content)
     file_html_content = re.sub(r'<p>', '<p style="margin-top: 20px; margin-bottom: 20px;">', file_html_content)
 
