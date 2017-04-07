@@ -275,7 +275,7 @@ def pub(file_parent_path, folder, qsj_folder_arr, url):
     mpwx_cover_url = upload_img(init.cover['origin_file_path'])
 
     print(init.cover['origin_file_path'])
-    # file_html_content = file_html_content + add_qr_html()
+    file_html_content = file_html_content + add_qr_html()
     file_html_content = re.sub(r'[\n]', '', file_html_content)
     file_html_content = re.sub(r'<p>', '<p style="margin-top: 20px; margin-bottom: 20px;">', file_html_content)
 
@@ -306,7 +306,9 @@ def pub(file_parent_path, folder, qsj_folder_arr, url):
         'fee0': '0',
         'reprint_permit_type0': '1',
         'copyright_type0': '1',
-        'original_article_type0': tag
+        'original_article_type0': tag,
+        'can_reward0': '1',
+        'reward_wording0': '沽之哉，沽之哉！我待贾者也'
 
     }
 
@@ -346,7 +348,7 @@ def pub(file_parent_path, folder, qsj_folder_arr, url):
 
 def add_qr_html():
 
-    html = '<p><img src="https://mmbiz.qlogo.cn/mmbiz/uDI3FLln00YxQTVXs3RfvviaogRjYFB6ejf6pB2Xwz0mibybuwV65maDAhWzOGQhPQWIIzc0ObjHiaGk0uC1ia9I2A/0?wx_fmt=jpeg"></p>'
+    html = '<p><img src="https://mmbiz.qlogo.cn/mmbiz_jpg/uDI3FLln00Yw8TN9swqCyMvEPGHH0IicT50wV24dsDZdAXcuibow9TkVtcQLjT8WTo6cTK72mZqhhib4uBBibfSKPg/0?wx_fmt=jpeg"></p>'
 
     return html
 
