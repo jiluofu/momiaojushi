@@ -98,15 +98,21 @@ def login(username, password):
     time.sleep(20)
     print('going on')
 
-    url = 'https://mp.weixin.qq.com/cgi-bin/loginqrcode?action=ask&token=&lang=zh_CN&token=&lang=zh_CN&f=json&ajax=1&random=0.202972810079751'
-    login_page = session.get(url, headers=headers)
-    print("ask1:" + login_page.text)
+    try:
+        url = 'https://mp.weixin.qq.com/cgi-bin/loginqrcode?action=ask&token=&lang=zh_CN&token=&lang=zh_CN&f=json&ajax=1&random=0.202972810079751'
+        login_page = session.get(url, headers=headers)
+        print("ask1:" + login_page.text)
+    except Exception as e:  
+        print(e)
 
     time.sleep(1)
 
-    url = 'https://mp.weixin.qq.com/cgi-bin/loginqrcode?action=ask&token=&lang=zh_CN&token=&lang=zh_CN&f=json&ajax=1&random=0.202972810079751'
-    login_page = session.get(url, headers=headers)
-    print("ask2:" + login_page.text)
+    try:
+        url = 'https://mp.weixin.qq.com/cgi-bin/loginqrcode?action=ask&token=&lang=zh_CN&token=&lang=zh_CN&f=json&ajax=1&random=0.202972810079751'
+        login_page = session.get(url, headers=headers)
+        print("ask2:" + login_page.text)
+    except Exception as e:  
+        print(e)
 
     post_url = 'https://mp.weixin.qq.com/cgi-bin/bizlogin?action=login'
     data = {
