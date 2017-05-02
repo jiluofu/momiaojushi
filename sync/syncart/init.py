@@ -32,7 +32,8 @@ agent = 'Mozilla/5.0 (Windows NT 5.1; rv:33.0) Gecko/20100101 Firefox/33.0'
 headers = {
     'Host': 'www.jianshu.com',
     'Referer': 'http://www.jianshu.com/',
-    'User-Agent': agent
+    'User-Agent': agent,
+    'Cookie': 'UM_distinctid=15abf6020014ed-0cbf592aad2c5c-1d336f50-232800-15abf602002747; remember_user_token=W1s1MTAwMV0sIiQyYSQxMCRtc3JidDFZei90T2tvWWNkdXRNajV1IiwiMTQ5MjU1MzQyOC4xMDAzNDA0Il0%3D--85cf23880a9e7f0ce8685af8f977c236281289a7; CNZZDATA1258679142=2085407508-1479623066-%7C1493240676; _gat=1; _session_id=V3lKL0s1L1F3OGZvc2FLcENNZE5qeC9La1ZjWW9XcWlCVEtCakRMMmkva2RBNjYvT3hhMTRVQ0pKanhWUFFxRlF3S05DWDRhbEdpeTM1NzJwUndnWlBzK3BEWnBWVkRqdTM3WkNYRXF4TFBQN0NmdVJRNEFVQm12SkVndlVEUjE4TG1oenpaZkc5dlFkd1ZNNW9pRS9oN2FRcmNqZURqV0JMV29Gb1FGYWtxTmVMWE5pTXduY21Jd002bzJWbUJMTmkzMmlsODE1OVhaOXdGMHUvek1VenBKU2ZDeWRpcEQ0dVVRRVBFY25qbkovWjMwT2M3Unh4WUJRTGFkZXU1ZXpTTlpBUm9GUlkyUXJOaFJNdW5aNGJidWNyV0VFcTBueDNKc0VWNitiT2VMaEhGdlkrekliQlV4NW1oNGsza0FDTWxycGF0YUVSOWFibXdacHBpQk96SHRIbUtCbER0WDduckFCQ3ZYLzFVTDJQeEswSStaUitXKzhVTGoxNERWZElGUFZkQmpsdzdMcksxc3k5RVkvUy95dlJkY1JjRW9nbWFzOUZ2UURpQT0tLUdxeTJxTFp4dHZBL3ptYjcwZEtvT1E9PQ%3D%3D--a536d6ba7430d1abb72ec9356250d36ad58b5281; _ga=GA1.2.1596808950.1479626705; _gid=GA1.2.204389367.1493761674; Hm_lvt_0c0e9d9b1e7d617b3e6842e85b9fb068=1493331084; Hm_lpvt_0c0e9d9b1e7d617b3e6842e85b9fb068=1493761674'
 }
 
 headers_img = {
@@ -52,6 +53,7 @@ print('init')
 def fetch_url(root_path, url, no_cover = False):
 
     html = session.get(url, headers=headers).text
+
     # 清除@JeanneQ后面奇怪字符引起的错误
     html = re.sub(r'@JeanneQ[^>]*', '', html)
     pattern = r'<h1 class="title">(.*?)</h1>'
