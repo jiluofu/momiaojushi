@@ -98,6 +98,9 @@ def isLogin():
 
 def login(secret, account):
 
+    # headers["X-Xsrftoken"] = get_xsrf()
+    # headers["X-Requested-With"] = "XMLHttpRequest"
+
     # 通过输入的用户名判断是否是手机号
     if re.match(r"^1\d{10}$", account):
         print("手机号登录 \n")
@@ -236,7 +239,7 @@ def pub(file_parent_path, folder):
         'User-Agent': agent,
         'X-XSRF-TOKEN': '',
         'Content-Type': 'application/json;charset=UTF-8',
-        'Cookie': cookie
+        # 'Cookie': cookie
 
     }
 

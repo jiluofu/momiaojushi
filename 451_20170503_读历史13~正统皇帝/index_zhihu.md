@@ -11,7 +11,7 @@
 
 
 说起他的动人事迹，就是著名的土木堡之变。
-![](https://pic2.zhimg.com/v2-cb09bfecd5c25316ac07c5bb6b580ba9.png)
+![](https://pic1.zhimg.com/v2-cb09bfecd5c25316ac07c5bb6b580ba9.png)
 
 
 和太监王振一起，不做任何准备，带着50万人出征瓦拉，半路害怕后退，在土木堡被全歼。
