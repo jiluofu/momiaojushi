@@ -48,7 +48,7 @@ headers = {
 session = requests.session()
 
 token = ''
-
+ticket = ''
 
 
 def login(username, password):
@@ -73,7 +73,10 @@ def login(username, password):
     }
 
     login_page = session.post(post_url, data=data, headers=headers)
+    # print(login_page.text)
     session.cookies.save()
+
+    
 
     url = 'https://mp.weixin.qq.com/cgi-bin/loginqrcode?action=ask&token=&lang=zh_CN&token=&lang=zh_CN&f=json&ajax=1&random=0.202972810079751'
     login_page = session.get(url, headers=headers)
@@ -137,6 +140,15 @@ def login(username, password):
     token = re.findall(pattern, res['redirect_url'])
     token = token[0]
     print(token)
+
+    url = 'https://mp.weixin.qq.com/cgi-bin/home?t=home/index&token=' + token + '&lang=zh_CN'
+    login_page = session.get(url, headers=headers)
+    # print(login_page.text)
+    pattern = r'ticket:"([^"]*)",'
+    global ticket
+    ticket = re.findall(pattern, login_page.text)
+    ticket = ticket[0]
+    print("get ticket:" + ticket)
 
 
 
@@ -204,13 +216,13 @@ def upload_img(img_file_path):
     data = {
 
         'action': 'upload_material',
-        'f':'json',
-        'writetype':'doublewrite',
-        'groupid':'3',
-        'ticket_id':'momiaojushi',
-        'ticket':'c28e7c4c2f50900afc7f96795fe7155ca857a5d6',
-        'svr_time':'1499588746',
-        'seq':'1'
+        'f': 'json',
+        'writetype': 'doublewrite',
+        'groupid': '3',
+        'ticket_id': 'momiaojushi',
+        'ticket': ticket,
+        # 'svr_time': '1499588746',
+        'seq': '1'
     }
 
     files = {
