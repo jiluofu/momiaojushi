@@ -162,12 +162,14 @@ def inital():
 
     return False
 
-def upload_img(img_file_path):
+def upload_img_by_url(img_file_path):
+
+    # print(img_file_path)
 
     pattern = r'/([^/]*)$'
     img_file_name = re.findall(pattern, img_file_path)
     img_file_name = img_file_name[0]
-    img_url = 'http://upload-images.jianshu.io/upload_images/' + img_file_name + '?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240'
+    img_url = 'https://upload-images.jianshu.io/upload_images/' + img_file_name + '?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240'
     print(img_url)
 
     # print(token)
@@ -180,12 +182,49 @@ def upload_img(img_file_path):
     }
 
     login_page = session.post(post_url, data=data, headers=headers)
-    print(login_page.text)
+    # print(login_page.text)
     res = eval(login_page.text)
     if res['errcode'] != 0:
         return ''
 
     url = res['url'].replace('\\', '')
+
+
+
+    return url
+
+def upload_img(img_file_path):
+
+    pattern = r'/([^/]*)$'
+    
+
+    # print(token)
+    post_url = 'https://mp.weixin.qq.com/cgi-bin/filetransfer'
+    # print(post_url)
+    data = {
+
+        'action': 'upload_material',
+        'f':'json',
+        'writetype':'doublewrite',
+        'groupid':'3',
+        'ticket_id':'momiaojushi',
+        'ticket':'c28e7c4c2f50900afc7f96795fe7155ca857a5d6',
+        'svr_time':'1499588746',
+        'seq':'1'
+    }
+
+    files = {
+
+        'file': open(img_file_path, 'rb')
+    }
+
+    login_page = session.post(post_url, data=data, files=files, headers=headers)
+    print(login_page.text)
+    res = eval(login_page.text)
+    if res['base_resp']['ret'] != 0:
+        return ''
+
+    url = res['cdn_url'].replace('\\', '')
 
 
 
@@ -197,7 +236,7 @@ def get_img_file_new_url(file_parent_path, folder):
 
     img_file_new_url = {}
     img_files = init.listdir(file_pre + 'img')
-    retry = 10
+    retry = 30
     for i in range(0, len(img_files)):
         img_file_path = file_pre + 'img' + os.path.sep + img_files[i]
         img_file_new_url[img_files[i]] = upload_img(img_file_path)
@@ -240,10 +279,23 @@ def get_qsj_cover(file_parent_path, qsj_folder):
     #     cover_url = cover_url[1]
     cover_url = cover_url[len(cover_url) - 1]
 
-
-    qsj_cover['cover_url'] = upload_img(cover_url)
+    # qsj_cover['cover_url'] = upload_img(cover_url)
+    qsj_cover['cover_url'] = get_qsj_cover_local_by_url(file_parent_path, qsj_folder, cover_url)
 
     return qsj_cover
+
+def get_qsj_cover_local_by_url(file_parent_path, qsj_folder, cover_url):
+
+    
+    cover_img_path = file_parent_path + os.sep + 'tmp' + os.sep + qsj_folder + os.sep + 'img'
+
+    pattern = r'\/([^\/]*)$'
+    cover_file_name = re.findall(pattern, cover_url)
+    cover_file_path = cover_img_path + os.sep + cover_file_name[0]
+    cover_url = upload_img(cover_file_path)
+
+
+    return cover_url
 
 def pub(file_parent_path, folder, qsj_folder_arr, url):
 
