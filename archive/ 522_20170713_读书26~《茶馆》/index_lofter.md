@@ -2,7 +2,7 @@
           
 **2017.07.13**
 
-![](http://imglf2.nosdn.127.net/img/N0o1cTdndWVGWjhDa3l1eTNBSWoxWEpNM2o3Z3ZQNmg5VmlzZ0hIcEpLTT0.jpg)来自亚马逊
+![](http://imglf2.nosdn.127.net/img/YTBoMHVqcTRoeUpIZit5d05QS05tLzJpZ3lpZ3JSbmRzVjM0YUdsa0FJND0.jpg)来自亚马逊
 
 
 慕名已久的《茶馆》果然名不虚传，短短几幕就勾画了清末、民国、抗日、解放前的社会百态。
